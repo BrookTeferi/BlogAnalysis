@@ -201,7 +201,7 @@ ANA/
 │   ├── settings.py
 │   ├── urls.py
 │   └── wsgi.py
-├── analytics/            # Main analytics app
+├── blog_analytics/            # Main analytics app
 │   ├── models.py         # Country, User, Blog, BlogView
 │   ├── views.py          # Three API endpoints
 │   ├── filters.py        # Dynamic filtering system
