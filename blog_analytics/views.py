@@ -8,8 +8,6 @@ from drf_spectacular.utils import extend_schema, OpenApiParameter
 from drf_spectacular.types import OpenApiTypes
 from datetime import timedelta
 import json
-
-
 from .models import Blog
 from .serializers import BlogViewsSerializer, TopSerializer, PerformanceSerializer
 from .filters import apply_filters
@@ -17,7 +15,6 @@ from .utils import calculate_growth_percentage, format_period_label
 
 
 def safe_json_loads(value):
-    """Safely parse JSON string or return None. Raises ValueError on invalid JSON."""
     if not value:
         return None
     try:
